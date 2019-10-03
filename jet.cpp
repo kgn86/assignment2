@@ -14,13 +14,6 @@ void Jet::SetNumberOfEngines(int engines)
 	this->numberOfEngines = engines;
 }
 
-
-void Jet::SetFuelType(string fuel_type)
-{
-	this->fuelType = fuel_type;
-}
-
-
 double Jet::mileageEstimate(double time)
 {
 	std::random_device rd;

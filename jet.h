@@ -9,7 +9,6 @@ public:
 	
 	virtual double mileageEstimate(double time);
 	virtual void SetNumberOfEngines(int engines);
-	virtual void SetFuelType(string fuel_type);
 private:
 	int numberOfEngines;
 	string fuelType;
