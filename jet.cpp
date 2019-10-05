@@ -28,7 +28,8 @@ double Jet::mileageEstimate(double time)
 	if (this->numberOfEngines >= 2 && fuelType == "Rocket")
 		mileage *= this->numberOfEngines * 1.055;
 
-	return mileage;
+
+	return mileage * time;
 }
 
 string Jet::toString()
