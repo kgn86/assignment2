@@ -16,6 +16,10 @@ void Jet::SetNumberOfEngines(int engines)
 	this->numberOfEngines = engines;
 }
 
+int Jet::getNumberOfEngines()
+{
+	return this->numberOfEngines;
+}
 
 double Jet::mileageEstimate(double time)
 {
@@ -25,8 +29,8 @@ double Jet::mileageEstimate(double time)
 
 	int mileage = rng(gen);
 
-	if (this->numberOfEngines >= 2 && fuelType == "Rocket")
-		mileage *= this->numberOfEngines * 1.055;
+	if (getNumberOfEngines() >= 2 && fuelType == "Rocket")
+		mileage *= getNumberOfEngines() * 1.055;
 
 
 	return mileage * time;
@@ -36,7 +40,7 @@ string Jet::toString()
 {
 	string str = "-> Jet\n";
 
-	str += Vehicle::toString() + "\n\tFuel type: " + this->fuelType +
+	str += Vehicle::toString() + "\n\tFuel type: " + getFuelType() + 
 		"\n\tEngine count: " + to_string(this->numberOfEngines);
 
 	return str;

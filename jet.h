@@ -8,6 +8,7 @@ public:
 	
 	virtual double mileageEstimate(double time);
 	virtual void SetNumberOfEngines(int engines);
+	virtual int getNumberOfEngines();
 	virtual string toString();
 private:
 	int numberOfEngines;
