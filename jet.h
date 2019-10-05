@@ -1,15 +1,16 @@
 #pragma once
 #include "PoweredVehicle.h"
-#include <random>
 
-class Jet : PoweredVehicle
+class Jet : public PoweredVehicle
 {
 public:
-	Jet(string fuel_type, int engine_count = 1);
+	Jet(string brand, string model, string fuel_type, int engine_count = 1);
 	
 	virtual double mileageEstimate(double time);
 	virtual void SetNumberOfEngines(int engines);
+	virtual string toString();
 private:
 	int numberOfEngines;
-	string fuelType;
+	string brand;
+	string model;
 };
