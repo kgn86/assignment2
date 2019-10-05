@@ -16,7 +16,7 @@ c) Wed Sep 25 18:13:30 2019, git log --grep .gitignore.
 
 d) Branches are used to encapsulate work and to avoid constant merge conflictions.
 
-e) git log shows commits, git status shows how up to date you are
+e) git log shows commits. git status shows how up to date you are and what files have been changed.
 
 *f) git log --nameonly --grep Vehicle.h
 
@@ -24,4 +24,11 @@ e) git log shows commits, git status shows how up to date you are
 
 h) 	Inerhitance is the act of inheriting properties from an object.
 	Polymorphism is the modification of properties of a parent object.	
-	Encapsulation is only exposing and using relevant functionalities.
+	Encapsulation is only exposing and using relevant functionalities through abstraction.
+
+i) 	In the integration manager model a single entity oversees the integration of all contributions. While
+	in the dictator & lieutenants workflow there are multiple integration managers which oversee a seperate
+	pieces of functionality.
+	
+j)	A 100 person development team would benefit more from the D&L workflow with less management there will
+	be more merge conflictions. An with more merge conflictions, more money is burnt.
